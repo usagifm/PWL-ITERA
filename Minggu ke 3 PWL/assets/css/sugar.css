@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserraat|Merriweather:400,600&display=swap');
+
+/*   
+Navigation
+*/
+
+nav {
+
+   color: #000;
+   background-color: white;
+   
+   
+}
+
+ nav ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    box-shadow: 13px 12px 23px #eee;
+    
+ }
+
+ nav li {
+    flex: 1;
+    display: block;
+    
+
+ }
+
+ nav li :hover{
+background-color: rgb(143, 143, 143);
+color: cornsilk;
+ }
+
+ nav li a{
+    font-family: 'Merriweather';
+    text-decoration: none;
+    
+    display: block;
+    text-align: center;
+    width: 60px;
+    padding: 20px;
+ }
+
+ nav li a :hover{ 
+  
+ }
+
+ section {
+    margin-left:  10%;
+    word-break: break-word;
+    padding-top: 2rem;
+
+ }
+
+ section h1{
+    font-family: 'Merriweather';
+    font-size: 32px;
+
+ }
+
+ section h3 {
+
+    font-family: 'Merriweather';
+ }
+ section p{
+    font-family: 'Merriweater';
+ }
+
+  section .profil {
+
+    height: 500px;
+
+    width: 500px;
+
+    background-color: #f7f5ec;
+
+    padding-top: 80px;
+    border-radius: 30px;
+    
+    font-weight: bold;
+    border: 3px solid rgb(136, 136, 177);
+   
+
+ }
+
+ section .profil .foto{
+            
+    height: 150px;
+    width: 100px;
+  margin:auto;
+margin-bottom: 30px;
+display: flex;
+
+    
+    border-radius: 150px;
+    
+    background-image: url('/assets/images/profile.jpg');
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-size: cover;
+ }
+
+
+ section .profil .namalengkap { 
+    text-align: center;
+    background-color: azure;
+    padding:2px;
+    width: 400px;
+    display: flex;
+    margin:auto;
+
+
+ }
+
+
+ section .profil .namalengkap p{
+    font-family: 'Merriweather';
+    font-size: 12px;
+ }
+
+ section .profil .ttl { 
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    padding:2px;
+    display: flex;
+    width: 400px;
+   
+    margin:auto;
+
+
+ }
+
+ section .profil .ttl p {
+     
+    font-family: 'Merriweather';
+    font-size: 12px;
+ }
+
+
+ 
+ section .galeri{
+
+   height: 225px;
+   width:  300px;
+    margin:auto;
+   margin-bottom: 30px;
+   background-repeat:   no-repeat;
+   background-position: center center;
+   background-size: cover;
+   display: flex;
+   border: 10px solid darkgrey;
+}
+
+
+ @media screen and (max-width: 690px) {
+
+   section {
+
+      width: 90%;
+
+   }
+    
+    section .profil .namalengkap {  
+        width: 80%;
+        display: flex; }
+    section .profil .ttl {  display: flex; 
+        width: 80%;
+    }
+    section .profil { width: 90%; }
+
+    section .galeri{ width: 90%; }
+
+  
+
+
+nav ul {
+   width: 100%;
+      display: inline-block;
+   background: rgb(165, 165, 165);
+}
+
+
+    
+nav li a{
+   width: 100%;
+   background: rgb(255, 246, 246);
+   text-align: left;
+}
+nav li a:hover{
+  
+   background: rgb(236, 236, 236);
+
+}
+
+
+ }
+
+ section .komuk {
+
+    height: 400px;
+    width: 300px;
+  margin:auto;
+margin-bottom: 30px;
+display: flex;
+border-radius: 150px;
+    
+    background-image: url('/assets/images/profile.jpg');
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-size: cover;
+ }
+
+  
+ }
+
+ .dark-mode {
+   background-color: black;
+   color: white;
+
+ }

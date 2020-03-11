@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/assets/css/sugar.css">
+</head>
+<body>
+
+
+    {%include "navigasi.njk" %}
+
+    <section>
+        {{content | safe }}
+    </section>
+<script>
+window.onload = autoJalan();
+
+function autoJalan(){
+var date = new Date();
+var jam = parseInt(date.getHours());
+
+if (jam>18){
+    var element = document.body;
+    var navigation = document.nav;
+
+
+   
+    element.style.backgroundColor = 'black';
+    element.style.color= 'white';
+    navigation.style.color= 'white';
+    navigation.style.backgroundColor = 'rgb(70, 70, 70)';
+
+    alert("Sekarang jam : " + jam + ", anda memasuki mode malam" );
+} else if (jam<18){
+
+var element = document.body;
+ element.style.backgroundColor = 'white';
+    element.style.color= 'black';
+
+     alert("Sekarang jam : " + jam + ", anda memasuki mode siang" );
+
+}
+
+
+
+alert(jam);
+}
+
+
+
+</script>
+
+</body>
+</html>

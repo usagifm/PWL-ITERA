@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/assets/css/sugar.css">
+</head>
+<body>
+
+
+    
+<nav>
+        <ul>   
+                <li>
+                        <a href="/">
+                                Home
+                        </a>
+                </li>
+                <li>
+                        <a href="/views/14117168">
+                                Profile 
+                        </a>
+                </li>
+                <li>
+                        <a href="/views/galeri">
+                                Gallery 
+                        </a>
+                </li>
+            </ul>
+</nav>
+
+    <section>
+        <h1> Assalamualaikum warahmatullai wabarakatuhi</h1>
+<p> 
+Jadi begini bang , kan abang suruh untuk profilenya menggunakan flex-box , menurut saya agak kurang pas bang , jadi saya menggunakan media query bang , semoga abang mengerti apa maksud ku bang 
+</p>
+
+<div class="komuk"> </div>
+    </section>
+<script>
+window.onload = autoJalan();
+
+function autoJalan(){
+var date = new Date();
+var jam = parseInt(date.getHours());
+
+if (jam>18){
+    var element = document.body;
+    var navigation = document.nav;
+
+
+   
+    element.style.backgroundColor = 'black';
+    element.style.color= 'white';
+    navigation.style.color= 'white';
+    navigation.style.backgroundColor = 'rgb(70, 70, 70)';
+
+    alert("Sekarang jam : " + jam + ", anda memasuki mode malam" );
+} else if (jam<18){
+
+var element = document.body;
+ element.style.backgroundColor = 'white';
+    element.style.color= 'black';
+
+     alert("Sekarang jam : " + jam + ", anda memasuki mode siang" );
+
+}
+
+
+
+alert(jam);
+}
+
+
+
+</script>
+
+</body>
+</html>

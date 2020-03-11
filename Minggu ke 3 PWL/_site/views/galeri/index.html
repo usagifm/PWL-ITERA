@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/assets/css/sugar.css">
+</head>
+<body>
+
+
+    
+<nav>
+        <ul>   
+                <li>
+                        <a href="/">
+                                Home
+                        </a>
+                </li>
+                <li>
+                        <a href="/views/14117168">
+                                Profile 
+                        </a>
+                </li>
+                <li>
+                        <a href="/views/galeri">
+                                Gallery 
+                        </a>
+                </li>
+            </ul>
+</nav>
+
+    <section>
+        
+<h1> GALERi nih gais </h1>
+<h3> Nama saya : Faqqih </h3>
+
+<div class="galeri" style="background-image: url('/assets/images/profile.jpg');">  </div>
+
+<h3 style="text-align: center"> Jiaaahh kebalik wkwkw</h3>
+<div class="galeri" style="background-image: url('/assets/images/IMG_2343.JPG');">  </div>
+<div class="galeri" style="background-image: url('/assets/images/IMG_2377.JPG');">  </div>
+
+
+    </section>
+<script>
+window.onload = autoJalan();
+
+function autoJalan(){
+var date = new Date();
+var jam = parseInt(date.getHours());
+
+if (jam>18){
+    var element = document.body;
+    var navigation = document.nav;
+
+
+   
+    element.style.backgroundColor = 'black';
+    element.style.color= 'white';
+    navigation.style.color= 'white';
+    navigation.style.backgroundColor = 'rgb(70, 70, 70)';
+
+    alert("Sekarang jam : " + jam + ", anda memasuki mode malam" );
+} else if (jam<18){
+
+var element = document.body;
+ element.style.backgroundColor = 'white';
+    element.style.color= 'black';
+
+     alert("Sekarang jam : " + jam + ", anda memasuki mode siang" );
+
+}
+
+
+
+alert(jam);
+}
+
+
+
+</script>
+
+</body>
+</html>
